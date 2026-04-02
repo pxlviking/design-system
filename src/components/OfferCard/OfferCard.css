@@ -1,0 +1,233 @@
+.offer-card {
+    align-items: flex-start;
+    background-color: #FDFDFD;
+    border: 1px solid;
+    border-color: var(--1-color-modes-colors-border-border-secondary);
+    border-radius: var(--2-radius-radius-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--3-spacing-spacing-md);
+    overflow: hidden;
+    padding: var(--3-spacing-spacing-md);
+    position: relative;
+    width: 320px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+}
+
+.offer-card:active {
+    background-color: #f5f5f5;
+}
+
+.offer-card .column {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+}
+
+.offer-card .logo {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: var(--3-spacing-spacing-xs);
+    position: relative;
+    padding: var(--3-spacing-spacing-xs) 0;
+}
+
+.offer-card .text-wrapper {
+    color: var(--1-color-modes-colors-text-text-secondary-700);
+    font-family: var(--text-xs-regular-font-family);
+    font-size: var(--text-xs-regular-font-size);
+    font-weight: var(--text-xs-regular-font-weight);
+    line-height: var(--text-xs-regular-line-height);
+    position: relative;
+    white-space: nowrap;
+}
+
+.offer-card .avatar-placeholder {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--1-color-modes-colors-border-border-secondary);
+}
+
+.offer-card .text-and-supporting {
+    align-items: flex-start;
+    display: inline-flex;
+    flex: 0 0 auto;
+    position: relative;
+}
+
+.offer-card .text {
+    color: var(--1-color-modes-colors-text-text-primary-900);
+    font-family: var(--text-sm-semibold-font-family);
+    font-size: var(--text-sm-semibold-font-size);
+    font-weight: var(--text-sm-semibold-font-weight);
+    line-height: var(--text-sm-semibold-line-height);
+    white-space: nowrap;
+}
+
+.offer-card .arrow-icon {
+    color: var(--1-color-modes-colors-text-text-secondary-700);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.offer-card .container {
+    align-items: center;
+    align-self: stretch;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: var(--3-spacing-spacing-xs);
+    position: relative;
+}
+
+.offer-card .icon-placeholder {
+    width: 16px;
+    height: 16px;
+    background-color: var(--1-color-modes-colors-border-border-secondary);
+    border-radius: 2px;
+}
+
+.offer-card .header {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex: 0 0 auto;
+    gap: var(--3-spacing-spacing-md);
+    position: relative;
+    width: 100%;
+}
+
+.offer-card .image-container {
+    width: 80px;
+    min-height: 80px;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.offer-card .offer-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.offer-card .luxury-co-working {
+    width: 80px;
+    height: 80px;
+    background-color: var(--1-color-modes-colors-foreground-fg-disabled-subtle);
+    border-radius: 8px;
+}
+
+.offer-card .div {
+    align-items: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--3-spacing-spacing-xxs);
+    padding: 0px var(--3-spacing-spacing-xs) 0px 0px;
+    position: relative;
+}
+
+.offer-card .p {
+    align-self: stretch;
+    color: var(--1-color-modes-colors-text-text-primary-900);
+    font-family: var(--text-sm-semibold-font-family);
+    font-size: var(--text-sm-semibold-font-size);
+    font-weight: var(--text-sm-semibold-font-weight);
+    line-height: var(--text-sm-semibold-line-height);
+    margin: 0;
+}
+
+.offer-card .text-wrapper-2 {
+    align-self: stretch;
+    color: var(--1-color-modes-colors-text-text-secondary-700);
+    font-family: var(--text-xs-regular-font-family);
+    font-size: var(--text-xs-regular-font-size);
+    font-weight: var(--text-xs-regular-font-weight);
+    line-height: var(--text-xs-regular-line-height);
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
+.offer-card .platforms {
+    display: flex;
+    flex-direction: row;
+    gap: var(--3-spacing-spacing-xs);
+    align-items: center;
+}
+
+.offer-card .platform-icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.offer-card .divider {
+    align-self: stretch;
+    height: 1px;
+    background-color: var(--1-color-modes-colors-border-border-secondary);
+    width: 100%;
+}
+
+.offer-card .text-wrapper-3 {
+    color: var(--1-color-modes-colors-text-text-secondary-700);
+    font-family: var(--text-xs-medium-font-family);
+    font-size: var(--text-xs-medium-font-size);
+    font-weight: var(--text-xs-medium-font-weight);
+    line-height: var(--text-xs-medium-line-height);
+    white-space: nowrap;
+}
+
+.offer-card .calendar-icon {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+.offer-card-pressed .offer-card {
+    background-color: #F5F5F5;
+}
+
+.offer-card .arrow-container {
+    display: flex;
+    width: 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.offer-card .card-header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    width: 100%;
+}
+
+.offer-card .card-header-left {
+    display: flex;
+    align-items: center;
+    gap: var(--3-spacing-spacing-xs);
+    padding: var(--3-spacing-spacing-xs) 0;
+}
+
+.offer-card .card-header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    align-self: stretch;
+}
