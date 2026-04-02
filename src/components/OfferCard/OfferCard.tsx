@@ -14,6 +14,7 @@ const platformIcons: Record<string, string> = {
 
 interface OfferCardProps {
   brandName: string;
+  brandAvatar?: string;
   title: string;
   description: string;
   publishedDate: string;
@@ -24,6 +25,7 @@ interface OfferCardProps {
 
 export const OfferCard = ({
   brandName,
+  brandAvatar,
   title,
   description,
   publishedDate,
@@ -36,7 +38,11 @@ export const OfferCard = ({
 <div className="card-header-row">
   <div className="card-header-left">
     <div className="text-wrapper">By</div>
-    <div className="avatar-placeholder" />
+    {brandAvatar ? (
+      <img src={brandAvatar} alt={brandName} className="avatar-img" />
+    ) : (
+      <div className="avatar-placeholder" />
+    )}
     <div className="text-and-supporting">
       <div className="text">{brandName}</div>
     </div>

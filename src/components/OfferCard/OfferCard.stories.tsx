@@ -27,6 +27,7 @@ Tapping the card leads to the Offer Details screen.
 
 **Props**
 - \`brandName\` — Name of the brand publishing the offer
+- \`brandAvatar\` — Optional URL for the brand avatar image; falls back to a placeholder circle
 - \`imageSrc\` — URL of the featured image, always required
 - \`title\` — Title of the offer
 - \`description\` — Short description of what the influencer needs to do
@@ -61,6 +62,7 @@ Tapping the card leads to the Offer Details screen.
   },
   args: {
     brandName: 'SpaceOffice',
+    brandAvatar: 'https://picsum.photos/seed/brand/20/20',
     title: 'Premium Spa Weekend for Two',
     description:
       'Create and share authentic social media content showcasing our spa experience before, during, and after your stay.',
@@ -75,6 +77,19 @@ export default meta;
 type Story = StoryObj<typeof OfferCard>;
 
 export const Default: Story = {};
+
+export const WithoutAvatar: Story = {
+  args: {
+    brandAvatar: undefined,
+  },
+  parameters: {
+    docs: {
+      description: {
+        story: 'Brand avatar falls back to a placeholder circle when no image URL is provided.',
+      },
+    },
+  },
+};
 
 export const Pressed: Story = {
   render: (args) => (

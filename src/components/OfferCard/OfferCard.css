@@ -55,6 +55,14 @@
     background-color: var(--1-color-modes-colors-border-border-secondary);
 }
 
+.offer-card .avatar-img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 0.5px solid rgba(0, 0, 0, 0.08);
+    object-fit: cover;
+}
+
 .offer-card .text-and-supporting {
     align-items: flex-start;
     display: inline-flex;
@@ -132,7 +140,7 @@
     flex: 1;
     flex-direction: column;
     gap: var(--3-spacing-spacing-xxs);
-    padding: 0px var(--3-spacing-spacing-xs) 0px 0px;
+    padding: var(--3-spacing-spacing-xs) var(--3-spacing-spacing-xs) 0px 0px;
     position: relative;
 }
 
@@ -169,8 +177,8 @@
 }
 
 .offer-card .platform-icon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     object-fit: contain;
 }
 
