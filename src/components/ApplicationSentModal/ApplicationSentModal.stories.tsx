@@ -2,12 +2,32 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { fn } from 'storybook/test';
 import { ApplicationSentModal } from './ApplicationSentModal';
 
+const PhoneWrapper = ({ children }: { children: React.ReactNode }) => (
+  <div style={{
+    position: 'relative',
+    width: '375px',
+    height: '667px',
+    overflow: 'hidden',
+    borderRadius: '16px',
+    background: '#f0f0f0',
+  }}>
+    {children}
+  </div>
+);
+
 const meta: Meta<typeof ApplicationSentModal> = {
   title: 'Components/ApplicationSentModal',
   component: ApplicationSentModal,
   tags: ['autodocs'],
+  decorators: [
+    (Story) => (
+      <PhoneWrapper>
+        <Story />
+      </PhoneWrapper>
+    ),
+  ],
   parameters: {
-    layout: 'fullscreen',
+    layout: 'centered',
     docs: {
       description: {
         component: `
